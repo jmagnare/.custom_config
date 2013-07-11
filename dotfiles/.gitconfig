@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+[user]
+	name = James Magnarelli
+	email = jmagnare@gmail.com
+[color]
+	ui = true
+[github]
+	user = jmagnare
