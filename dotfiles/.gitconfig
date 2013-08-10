@@ -7,3 +7,5 @@
 	ui = true
 [github]
 	user = jmagnare
+[credential]
+	helper = cache --timeout=1800
