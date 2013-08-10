@@ -18,8 +18,9 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ./oh-my-zsh
 
 
 # 2. Set up symlinks
-ln -s ./dotfiles/.gitconfig ~/.gitconfig
-ln -s ./dotfiles/.zshrc ~/.zshrc
+ln -s ~/.custom_config/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.custom_config/dotfiles/.zshrc ~/.zshrc
+ln -s ~/.custom_config/dotfiles/mytheme.zsh-theme ~/.custom_config/oh-my-zsh/themes/mytheme.zsh-theme
 
 # 3. Change default shell to zsh, if it's installed
 
@@ -37,6 +38,7 @@ if $ZSH_LOCATIONS;
             break
           else
             echo "Failed to switch shell to zsh, at $path"
+        fi
       done
     chsh -s /bin/zsh
 
